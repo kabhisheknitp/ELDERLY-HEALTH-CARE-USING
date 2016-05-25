@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+       <link rel="shortcut icon" href="../../img/symbol.png">
+
+    <title>STANLEY - Free Bootstrap Theme </title>
+
+    <!-- Bootstrap core CSS -->
+   <!-- <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <script src="../..scripts/jquery-1.12.0.min.js"></script> -->
+
+      <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">  
+       <script src="../../bootstrap/js/bootstrap.min.js"></script>
+       
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover.zoom.js"></script>
+    <script src="assets/js/hover.zoom.conf.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript">
+    $(function (){
+        setTimeout(sendInfo("Osteoarthritis"),2000);
+    });    
+        
+        
+var request;  
+function sendInfo()  
+{  ;
+var v= arguments[0]; 
+//var v=id
+var url="../../diseaseReader.jsp?val="+encodeURIComponent(v);  
+  
+if(window.XMLHttpRequest){  
+request=new XMLHttpRequest();  
+}  
+else if(window.ActiveXObject){  
+request=new ActiveXObject("Microsoft.XMLHTTP");  
+}  
+  
+try{  
+request.onreadystatechange=getInfo;  
+request.open("GET",url,true);  
+request.send();  
+}catch(e){alert("Unable to connect to server");}  
+}  
+  
+function getInfo(){  
+if(request.readyState==4){  
+var val=request.responseText;  
+document.getElementById('avadhesh').innerHTML=val;  
+}  
+}  
+        
+    </script>
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+            
+            <div class="row">
+		<div class="col-lg-2"><img class="img-circle" height="70" width="70" src="assets/img/green.jpg" alt="Stanley"></div>
+		<div class="col-lg-10">
+            <a class="navbar-brand" href="index.html">Geriatrics HealthCare<br><h6>(A Healthcare System For Elderly People)</h6></a>
+		</div>
+       </div>
+            
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <!--  <a class="navbar-brand" href="index.html">Geriatrics Ontology</a> -->
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="work.html">Symptom Checker</a></li>
+            <li><a href="../../ontoBrowser.html">Ontology Browser</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	
+	<!-- +++++ Projects Section +++++ -->
+	
+	<div class="container pt ">
+		<div class="row">
+			<div  class="col-lg-6 col-lg-offset-3 centered">
+				<h3>Disease Encyclopedia</h3>
+				<hr>
+				<p>It contains information about various disease.</p>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	
+       <!-- from disease view -->
+        
+<div id="diseaseEncyclopedia" class="container pt ">
+      <div  class="row">                      
+          <div class="col-md-4">
+  <div class="panel-group" id="accordion1">
+  
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col1">Musculoskeletal System</a>
+        </h4>
+      </div>
+      <div id="col1" class="panel-collapse collapse in">
+        <div class="list-group">
+            <a href="#diseaseEncyclopedia" class="list-group-item" onclick="sendInfo('Osteoarthritis')">Osteoarthritis</a>
+            <!--href="../../diseaseReader.jsp?val=hi"-->
+            <a href="#diseaseEncyclopedia" onclick="sendInfo('Rheumatoid Arthritis')" class="list-group-item">Rheumatoid Arthritis</a>
+            <a href="#diseaseEncyclopedia" onclick="sendInfo('Osteoporosis')" class="list-group-item">Osteoporosis</a>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col2">Cardiovascular System</a>
+        </h4>
+      </div>
+      <div id="col2" class="panel-collapse collapse">
+        <div class="list-group">
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Hypertension')" class="list-group-item">Hypertension</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Ischaemic Heart Disease')" class="list-group-item">Ischaemic Heart Disease</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Acute Myocardial Infarction')" class="list-group-item">Acute Myocardial Infarction</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Chronic Cardiac Failure')" class="list-group-item">Chronic Cardiac Failure</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Orthostatic Hypotension')" class="list-group-item">Orthostatic Hypotension</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Syncope')" class="list-group-item">Syncope</a>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col3">Gastrointestinal System</a>
+        </h4>
+      </div>
+      <div id="col3" class="panel-collapse collapse">
+        <div class="list-group">
+            <a href="#diseaseEncyclopedia" onclick="sendInfo('Hiatus Hernia & Gastroesophageal Reflux')" class="list-group-item">Hiatus Hernia & Gastroesophageal Reflux</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('NSAID Gastropathy &amp; peptic ulcer')" class="list-group-item">NSAID Gastropathy & peptic ulcer</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Non Ulcer Dyspepsia')" class="list-group-item">Non Ulcer Dyspepsia</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Cancer of GI tract')" class="list-group-item">Cancer of GI tract</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Constipation')" class="list-group-item">Constipation</a>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col4">Endocrine System</a>
+        </h4>
+      </div>
+      <div id="col4" class="panel-collapse collapse">
+        <div class="list-group">
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Diabetes Mellitus')" class="list-group-item">Diabetes Mellitus</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('HypoThyroidism')" class="list-group-item">HypoThyroidism</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('HyperThyroidism')" class="list-group-item">HyperThyroidism</a>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col5">Urinary System</a>
+        </h4>
+      </div>
+      <div id="col5" class="panel-collapse collapse">
+        <div class="list-group">
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Urinary Tract Infection')" class="list-group-item">Urinary Tract Infection</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Benign Prostatic Hypertrophy')" class="list-group-item">Benign Prostatic Hypertrophy</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Malignancy Of Prostate')" class="list-group-item">Malignancy Of Prostate</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Urinary Incontinence')" class="list-group-item">Urinary Incontinence</a>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col6">Mental Health</a>
+        </h4>
+      </div>
+      <div id="col6" class="panel-collapse collapse">
+        <div class="list-group">
+            <a href="#diseaseEncyclopedia" onclick="sendInfo('Depression')" class="list-group-item">Depression</a>          
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col7">Neurological Disorder</a>
+        </h4>
+      </div>
+      <div id="col7" class="panel-collapse collapse">
+        <div class="list-group">
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Parkinson Disease')" class="list-group-item">Parkinson Disease</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Stroke')" class="list-group-item">Stroke</a>          
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+     <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col8">Sensory System</a>
+        </h4>
+      </div>
+      <div id="col8" class="panel-collapse collapse">
+        <div class="list-group">
+         <a href="#diseaseEncyclopedia" onclick="sendInfo('Cataract')" class="list-group-item">Cataract</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Glaucoma')" class="list-group-item">Glaucoma</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Skin Infection')" class="list-group-item">Skin Infection</a>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col9">Respiratory System</a>
+        </h4>
+      </div>
+      <div id="col9" class="panel-collapse collapse">
+        <div class="list-group">
+            <a href="#diseaseEncyclopedia" onclick="sendInfo('Pneumonia')" class="list-group-item">Pneumonia</a>
+            <a href="#diseaseEncyclopedia" onclick="sendInfo('Tuberculosis')" class="list-group-item">Tuberculosis</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Bronchial Asthma')" class="list-group-item">Bronchial Asthma</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Chronic Obstructive Pulmonary Disease')" class="list-group-item">Chronic Obstructive Pulmonary Disease</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Lung cancer')" class="list-group-item">Lung cancer</a>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col10">Brainageing/Cognitive Imapirment</a>
+        </h4>
+      </div>
+      <div id="col10" class="panel-collapse collapse">
+        <div class="list-group">
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Dementia')" class="list-group-item">Dementia</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Alzheimer')" class="list-group-item">Alzheimer</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Vascular Dementia')" class="list-group-item">Vascular Dementia</a>
+          <a href="#diseaseEncyclopedia" onclick="sendInfo('Confusion/Delirium')" class="list-group-item">Confusion/Delirium</a>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion1" href="#col11">Cancers</a>
+        </h4>
+      </div>
+      <div id="col11" class="panel-collapse collapse">
+        <div class="list-group">
+         <a href="#diseaseEncyclopedia" onclick="sendInfo('Cancer')" class="list-group-item">Cancer</a>
+        </div>
+      </div>
+    </div>
+	
+  </div>
+   </div>
+                     
+           <div  class="col-md-8">
+                        
+                          <div  class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 class="text-center">Disease Information</h4>                           
+                           </div>                              
+                              <div class="panel-body">
+                                  <span id="avadhesh" class="panel-body"> </span>
+                               </div>
+                          </div>
+             </div>
+        </div>
+</div> <!-- /container -->
+        
+        <br><br><br>	
+	<!-- +++++ Footer Section +++++ -->
+	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>Developed At</h4>
+					<p>
+						NIT Patna,<br/>
+						Ashok Rajpath, <br/>
+						Patna, Bihar,<br/>
+						800005.
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>Developers</h4>
+					<p>
+						<a href="#">Avadhesh Singh</a><br/>
+						<a href="#">Sunil Gupta</a><br/>
+						<a href="#">Vivek Raj</a><br/>
+						<a href="#">Shubhnkar Upadhyay</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>About Project</h4>
+					<p>This project was created to enhance the diagnosis process for elderly people. The site is powered by a Decision Support System based on an Ontology Framework.</p>
+				</div><!-- /col-lg-4 -->
+			
+			</div>
+		
+		</div>
+	</div>
+	
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

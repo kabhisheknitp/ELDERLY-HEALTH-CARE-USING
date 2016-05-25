@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+             android:typeface="serif"
+             android:textColor="@color/bg_gradient_end"
+            android:text="Emergency Contacts"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+   <ListView
+       android:id="@+id/listView1"
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/textView1"
+       android:layout_marginTop="42dp" >
+   </ListView>
+
+   <Button
+       android:id="@+id/imageButton1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/listView1"
+       android:text="@string/contact"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/call"
+       
+       android:gravity="bottom"
+       android:textStyle="bold"
+       android:typeface="serif"
+        />
+
+</RelativeLayout>

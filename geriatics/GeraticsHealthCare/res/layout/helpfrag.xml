@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="467dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="27dp"
+            android:text="Subject :"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:ems="10"
+            android:hint="enter subject name..." />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="14dp"
+            android:text="Your Query :"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignRight="@+id/editText1"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="enter your question..."
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Ask For Help"
+            android:textColor="@color/bg_gradient_end"
+             android:typeface="serif"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/bg_gradient_start"
+            android:text=" Send " />
+
+ </RelativeLayout>
+
+</ScrollView>

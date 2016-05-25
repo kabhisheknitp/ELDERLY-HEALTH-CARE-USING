@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+
+    <title>STANLEY - Free Bootstrap Theme </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+    <link rel="stylesheet" href="http://ontologyonline.org/css/blueprint/screen.css" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="/home/babayega/Documents/major_pro/GeriatricsWebApp/web/css/jOWL.css" type="text/css"/>
+        <link rel="stylesheet" href="/home/babayega/Documents/major_pro/GeriatricsWebApp/web/css/mycss.css" type="text/css"/>
+	<link type="text/css" rel="stylesheet" href="/home/babayega/Documents/major_pro/GeriatricsWebApp/web/css/jq/custom-theme/jquery-ui-1.7.custom.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/home/babayega/Documents/major_pro/GeriatricsWebApp/web/scripts/jquery.tooltip.js"></script>
+	<script type="text/javascript" src="/home/babayega/Documents/major_pro/GeriatricsWebApp/web/scripts/jOWL.js"></script>
+	<script type="text/javascript" src="/home/babayega/Documents/major_pro/GeriatricsWebApp/web/scripts/jOWL_UI.js"></script>
+	<script type="text/javascript" src="/home/babayega/Documents/major_pro/GeriatricsWebApp/web/scripts/jOWLBrowser.js"></script>
+
+
+    <script type="text/javascript">
+
+  
+  
+
+
+
+
+/* 
+Modify this configuration object to fine-tune the visualisation of the jOWL browser.
+*/
+	var configuration = {
+		ontology : "/home/babayega/Documents/major_pro/GeriatricsWebApp/web/data/geriatrics.owl", //the ontology to load
+		owlClass       : null, //The class to show when loading
+		classOverview  : true, //show or hide the class overview list.
+		propertiesTab  : true, //show or hide the properties panel
+		individualsTab : true, //show or hide the individuals panel
+		sparqldlTab    : true  //show or hide the sparq-dl panel
+	}
+
+/** 
+Do not Modify the code below unless you know what you are doing.
+*/
+$(document).ready(function() {
+	if(!configuration.propertiesTab) { $('#propertyPanel').remove();   $('#tab2').remove(); }
+	if(!configuration.individualsTab){ $('#thingwidget').appendTo("body").hide(); $('#individualPanel').remove(); $('#tab3').remove(); }
+	if(!configuration.sparqldlTab)   { $('#sparqldlPanel').remove();   $('#tab4').remove(); }
+
+	$("#tabs").tabs();
+
+	jOWL.load(configuration.ontology, initjOWL, {reason : true, locale : 'en' });
+});
+
+function initjOWL(){
+
+		createOntologyWidget();
+		var conceptWidget = createConceptWidget();
+
+		if(configuration.classOverview){
+			jOWLBrowser.views.push({query: "Class(?x)", element : $('#classlist'), widget : conceptWidget}); 
+			}
+
+		if(configuration.propertiesTab){
+			var propertyWidget = createPropertyWidget(); 
+			jOWLBrowser.views.push({query: "ObjectProperty(?x)", element : $('#OPlist'), widget : propertyWidget});
+			jOWLBrowser.views.push({query: "DatatypeProperty(?x)", element : $('#DPlist'), widget : propertyWidget});
+			}
+
+		if(configuration.individualsTab){
+			var thingWidget = createIndividualsWidget();
+
+			setTimeout(function(){//show individuals asynchronously
+				var arr = new jOWL.Ontology.Array();
+				for(key in jOWL.index('Thing')){
+						arr.concat(jOWL.index('Thing')[key], true);
+					}
+				showOverviewResults(arr, $('#thinglist'), thingWidget);
+			}, 200);
+			
+			}
+
+		if(configuration.sparqldlTab){
+			createSparqlDLWidget(); 
+			}
+
+		createOverviewWidget();
+}
+
+   </script>
+
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">STANLEY</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- +++++ Welcome Section +++++ -->
+	<div id="ww">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 centered">
+					<img src="assets/img/user.png" alt="Stanley">
+					<h1>About Stanley!</h1>
+					<p>Hello everybody. I'm Stanley, a free handsome bootstrap theme coded by BlackTie.co. A really simple theme for those wanting to showcase their work with a cute & clean style.</p>
+					<p>Please, consider to register to <a href="http://eepurl.com/IcgkX">our newsletter</a> to be updated with our latest themes and freebies. Like always, you can use this theme in any project freely. Share it with your friends.</p>
+				
+				</div><!-- /col-lg-8 -->
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /ww -->
+	
+	
+	<!-- +++++ Information Section +++++ -->
+	
+	<div class="panel panel-default  ">                  
+           <div class="panel-body">
+               <ul class="nav nav-tabs nav-tabs-justified"  >
+                    <li class="active"><a data-toggle="tab" href="#tab1">Classes</a></li>
+                    <li ><a data-toggle="tab" href="#tab2">Properties</a></li>
+                    <li ><a data-toggle="tab"  href="#tab3">Individuals</a></li>
+                    <li ><a data-toggle="tab" href="#tab4">SPARQL-DL</a></li>	
+               </ul>
+
+               <div class="tab-content" >
+                
+                <div id="tab1" class="tab-pane fade in active"><br>
+                                <div id="conceptwidget">
+                                    <form action="" class="form-group">
+                                            <div class="input-group">
+                                                    <span class="input-group-addon glyphicon glyphicon-search"></span>
+                                                    <input id="owlauto" type="text" class="form-control" placeholder="Enter Search Terms here"/>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                    <div class="col-md-6">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <input type="radio" name="visualisation" value="treeview" checked="checked"/>
+                                                                </span>
+                                                                <label class="form-control">TREEVIEW STRUCTURE</label>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <input type="radio" name="visualisation" value="navbar"/>
+                                                            </span>
+                                                            <label class="form-control">NAVIGATION BAR</label>
+
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </form>
+                                        
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                   <div id="treeview" class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                         <h3 class="panel-title text-center">Treeview</h3>
+                                                     </div>
+                                                    </div>
+                                                    
+                                                    <div id="navbar" style="display:none" class="panel panel-default">
+                                                      <div class="panel-heading">
+                                                         <h4 class="panel-title text-center ">Navbar</h4>
+                                                      </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                                
+                                              <div class="col-md-8">
+                                                <div id="description" class="resourcebox panel panel-default" data-jowl="owl:Class">
+                                                 <div class="panel-heading">	
+                                                    <h4 class="panel-title text-center  propertybox" data-jowl="rdfs:label">Description of <span>${rdfs:label}</span></h4>
+                                                 </div>
+                                                     <div class="panel-body">
+                                                    <div class="jowl-content">
+                                                        <b>Treatment :</b>
+                                                        <div class="propertybox" data-jowl="rdfs:comment">${rdfs:comment}</div>
+                                                        <div class="propertybox">
+                                                            <b>Terms</b>: <span data-jowl="term">${term}</span>
+                                                        </div>
+                                                        <div class="propertybox" id="disjoints">
+                                                            <b>Disjoint With</b>: <span data-jowl="owl:disjointWith">${owl:disjointWith}</span>
+                                                        </div>
+                                                        <div class="propertybox">
+                                                            <b>Relations</b> 
+                                                            <ul>
+                                                                <li data-jowl="sparql-dl:PropertyValue(owl:Class, ?p, ?t)">
+                                                                    <span>${?p}</span><span>: </span><span>${?t}</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div id="individualsPropertyBox" class="propertybox" style="padding:5px;">
+                                                                <b>Instances</b><br/>
+                                                                <span class="valuebox" data-jowl="sparql-dl:DirectType(?i, owl:Class)">${?i}</span>
+                                                        </div>
+                                                    </div>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                
+					</div>
+			</div>
+			<div id="tab2" class="tab-pane fade">
+                            <div class="well">
+                                <div>
+                                    <b>Object Properties</b><br>
+                                        <div id="OPlist"></div>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>Data type Properties</b><br>
+                                        <div id="DPlist"></div>
+                                </div>
+                            </div>
+			    <hr class="space"/>
+                            <div id="propertywidget">
+                                <div class="resourcebox panel panel-success" data-jowl="rdf:Property">
+                                   
+                                    <h4 class="panel-heading panel-title text-center propertybox" data-jowl="rdfs:label">Description of <span>${rdfs:label}</span></h4>
+                                    
+                                    <div class="panel-body">
+                                    <div class="jowl-content">
+                                        <div class="propertybox" data-jowl="rdfs:comment">${rdfs:comment}</div>
+                                        <div class="propertybox">
+                                               <b>Terms</b>: <span data-jowl="term">${term}</span>
+                                        </div>
+                                        <div class="propertybox">
+                                                <b>Domain</b>: <span data-jowl="rdfs:domain">${rdfs:domain}</span>
+                                        </div>
+                                        <div class="propertybox">
+                                                <b>Range</b>: <span data-jowl="rdfs:range">${rdfs:range}</span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+			</div>
+			<div id="tab3" class="tab-pane fade">
+                            <div class="well">
+                            <div id="thinglist"></div>
+                               </div>
+                            <hr class="space"/>
+                            <div id="thingwidget">
+                                <div class="resourcebox panel panel-success" data-jowl="owl:Thing">                                 
+                                    <h4  class="panel-heading panel-title text-center propertybox" data-jowl="rdfs:label">Description of <span>${rdfs:label}</span></h4>                                
+                                    <div class="panel-body">
+                                    <div class="jowl-content">
+                                            <div class="propertybox" style="margin-bottom:5px"><b>owl:Class</b> <span data-jowl="rdf:type">${rdf:type}</span></div>
+                                            <div class="propertybox" data-jowl="rdfs:comment">${rdfs:comment}</div>
+                                            <div class="propertybox" data-jowl="sparql-dl:PropertyValue(owl:Thing, ?p, ?t)">	
+                                                    <span class="alt">${?p}</span><span>: </span><span>${?t}</span>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+			</div>
+			<div id="tab4" class="tab-pane fade">
+                            <h4>Enter a query:</h4>
+                            <form id="sparql">
+                                <div class="input-group">
+                                    <span class="input-group-addon glyphicon glyphicon-search"></span>
+                                    <input type="text" size="100" class="form-control" placeholder="Enter your query"/>
+                                </div>
+                            </form>
+			    <hr class="space"/>
+                            
+                                <div class="row">
+                              <div class="col-md-7" >
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                        <h3 class="text-center panel-title">Results</h3>                                  
+                                    </div>
+                                    <div class="panel-body">
+                                <div class="loader hide" >
+                                        <div style="color:black">Querying, Please Stand By</div>
+                                        <img src="http://ontologyonline.org/img/ajax-loader.gif" alt="Loading Image"/>
+                                </div>
+                                <div id="sparqlresults" ></div>
+                                    </div>
+                                </div>
+                             </div>
+                             
+                                    <div class="col-md-5">
+                                <h3>Syntax</h3>
+                                <ul>
+                                        <li>Type(?a, ?b)</li>
+                                        <li>PropertyValue(?a, ?b, ?c)</li>
+                                        <li>Class(?a)</li>
+                                        <li>ObjectProperty(?a)</li>
+                                        <li>DatatypeProperty(?a)</li>
+                                </ul>
+                                    Examples: see <a href="http://jowl.ontologyonline.org/SPARQL-DL.html">jOWL SPARQL-DL Test Suite page</a>
+                             </div>
+                            </div>
+                           
+			</div>                   	
+	            </div>
+                </div>
+            </div>
+	
+	<!-- +++++ Footer Section +++++ -->
+	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>My Bunker</h4>
+					<p>
+						Some Address 987,<br/>
+						+34 9054 5455, <br/>
+						Madrid, Spain.
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>My Links</h4>
+					<p>
+						<a href="#">Dribbble</a><br/>
+						<a href="#">Twitter</a><br/>
+						<a href="#">Facebook</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>About Stanley</h4>
+					<p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
+				</div><!-- /col-lg-4 -->
+			
+			</div>
+		
+		</div>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

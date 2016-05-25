@@ -1,0 +1,587 @@
+<menu>
+	 <disease><!--Cardiovascular system-->
+		 <name>Hypertension</name>
+		 <symptoms>
+			headache, shortness of breath, nosebleed
+		 </symptoms>
+		 <diagnosis>
+			1.Lifestyle modification.
+			2.Salt restriction.
+			3.Weight loss.
+			4.beta-blocker (atenolol, metoprolol).
+			5.Calcium channel blockers (amlodipine) alone or in combination.
+			6.Thiazide diuretics.
+			7.ACE inhibitors: enalapril, lisinoprilm ramipril.
+			8.Angiotensin receptor blockers: losartan, telmisartan.
+
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--Cardiovascular system-->
+		 <name>Ischaemic Heart Disease</name>
+		 <symptoms>
+			shortness of breath, chest pain, extreme fatigue, fainting, heart palpitation, weight gain, difficulty sleeping,
+			swelling in leg feet abdomen, cough, congestion
+		 </symptoms>
+		 <diagnosis>
+			1.short-and long-acting nitrates.
+			2.beta-adrenergic blockers.
+			3.calcium channel antagonists.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--Cardiovascular system-->
+		 <name>Acute Myocardial Infarction</name>
+		 <symptoms>
+			anxiety, cough, dizziness, fast heart rate, heaviness in chest, chest pain, shortness of breath,
+			sweating, vomiting
+		 </symptoms>
+		 <diagnosis>
+			1.Angiotensin-converting enzyme (ACE) inhibitors.
+			2.Angiotensin receptor blockers (ARBs).
+			3.Anti-ischemic agents such as ranolazine (Ranexa).
+			4.Beta-blockers.
+			5.Calcium channel blockers.
+			6.Nitrates.
+			7.Statins.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Chronic Cardiac Failure</name>
+		 <symptoms>
+			Anxiety, restlessness unresponsiveness,
+			delirium, lethargy, hallucinations
+			Chest pain, chest tightness, heart palpitations,
+			Dizziness, Extreme Fatigue, blood-tinged phlegm, 
+			cyanosis, shortness of breath, labored breathing, wheezing, choking.
+		 </symptoms>
+		 <diagnosis>
+			1.Lifestyle and dietary changes to maintain an ideal weight and fitness level. 
+			2.Consume low saturated fat, trans fats, and sodium.
+			3.ACE inhibitors (ramipril, lisinopril, enalapril, captopril).
+			4.Aldosterone blockers (Aldactone).
+			5.Anticoagulants (aspirin, Coumadin, Plavix).
+			6.Beta-blockers (metoprolol, atenolol and propranolol).
+			7.Cholesterol-lowering medications (statins).
+			8.Digitalis drugs (digoxin).
+			9.Diuretics (Lasix, Bumex, HCTZ).
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Orthostatic Hypotension	</name>
+		 <symptoms>
+			faintness on standing, frequent fall, dizziness, neck pain, syncope,
+			weakness in limbs on standing, micturition syncopesm
+		 </symptoms>
+		 <diagnosis>
+			1.Take rest.
+			2.Stop drugs like antihypertensives, diuretics, tricyclic antidepressants.
+			3.Do not give vain therapy to normalize blood pressure.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Syncope</name>
+		 <symptoms>
+			transient loss of consciousness, Disorientation, Irregular heart beat, 
+			Slow heart rate (bradycardia), fainting, Headache
+		 </symptoms>
+		 <diagnosis>
+			1.Medications (antidepressants and blood pressure drugs).
+			2.Prevent pooling of blood in the legs.
+			3.Surgical procedures (insertion of a pacemaker).
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--respiratory system--><!--Smoking is the single most important cause of respiratory disease in old age-->
+		 <name>Pneumonia</name>
+		 <symptoms>
+			confusion, incontinence, immobility, fever
+		 </symptoms>
+		 <diagnosis>
+			1.Antibiotic medications. 
+			2.Bronchodilators.
+			3.Cool-mist vaporizer
+			4.Drink plenty of fluids to prevent dehydration.
+			5.Medications to relieve fever and body aches.
+			6.Oxygen therapy help relieve shortness of breath..
+			7.Take proper Rest.
+			8.Thick phlegm may need to be medically suctioned.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Tuberculosis</name>
+		 <symptoms>
+			fever, night sweats, haemoptysis, cough, weight loss 
+		 </symptoms>
+		 <diagnosis>
+			1.A short course chemotherapeutic regimen, unsupervised or directly observed,
+			with isoniazid (5mg/kg/day), rifampicin (10mg/kg/day), ethambutol (15mg/kg/day) and pyrazinamide (25mg/kg/day)
+			or treptomucin (0.5 g/day) for two months followed by isoniazed and rifampicin for four months.
+			2.Avoid streptomycin.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Bronchial Asthma</name>
+		 <symptoms>
+			intermittent cough, wheezing, breathlessness, cough, chest tightness
+		 </symptoms>
+		 <diagnosis>
+			1.Diagnose asthma if you find wheeze with dyspnoea in the absence of a history of smoking.
+			2.Acute asthma should be managed with high-flow oxygen and nebulized beta-agonists and ipratropium.
+			3.Treat with intravenous aminophylline and salbutamol patient not respond to above.
+			4.Patients with rising carbon dioxide retention and impending exhaustion should be managed with mechanical ventilation.
+			5.Chronic bronchial asthma is managed with metered dose inhalers (MDI) of beta-agonists (salbutamol or terbutaline), 
+			steroid (beclomethasone or budesonide) and ipratropium. 
+			6.Chronic severe bronchial asthma requires oral corticosteroids (prednisolone) with its accompanying verse effects.
+			7.15% improvement in FEV after salbutamol nebulization indicates a diagnosis of asthma.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Chronic Obstructive Pulmonary Disease</name>
+		 <symptoms>
+			hypoxia, fatigue, malaise, weight loss, Difficulty in sleeping, 
+			hyperinflated chest, wheezing, 
+			cyanosis, oedema, raise in jvp.
+		 </symptoms>
+		 <diagnosis>
+			1.Relief of airway obstruction by Bronchodilators  beta-agonists (salbutamol, terburaline) oral and inhaled anticholinergic inhaler (ipratropium).
+			2.Steroid inhalers (beclomethasone, budesonide).
+			3.Theophylline.
+			4.Long-term home oxygen therapy is recommended in patients with persistent hypoxia (PO2 less than 55) for minimum 16 hours per day.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Lung cancer</name>
+		 <symptoms>
+			cough, haemoptysis, chest pain, weight loss
+		 </symptoms>
+		 <diagnosis>
+			1.Radical or palliative radiotherapy. 
+			2.Chemotherapy is mostly reserved for small cell cancer and is poorly tolerated.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--endocrine system-->
+		 <name>Diabetes Mellitus</name>
+		 <symptoms>
+		 <!-- type 1-->
+			weight loss,
+			extreme fatigue, 
+			mood changes,
+			Flu-Like Symptoms,
+			Vomiting,
+			<!-- type 2-->
+			erectile dysfunction (ED),
+			Frequent infections,
+			Odd sensations, 
+			Weakness,
+		<!--Serious Condition-->
+			Abdominal pain,
+			Confusion,
+			Dry skin or mouth,
+			Fruity smelling breath,
+			Severe thirst and frequent urination,
+			Shortness of breath,
+		 </symptoms>
+		 <diagnosis>
+			1.Venous plasma glucose level of 200 mg after two hours of 75 g of oral glucose.
+			2.Insulin sensitizing drugs such as metaformin, pioglitazone.	
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--endocrinesystem-->
+		 <name>HypoThyroidism</name>
+		 <symptoms>
+			obesity, deafness, cold intolerance, fatigue, course skin, low cardiac output state
+		 </symptoms>
+		 <diagnosis>
+			1.Replacement of l-thyroxine.
+			2.High TSH with low t3 and t4 concentration
+			start with low dose(0.025 mg) and increase slowly to avoid cardiovascular toxicity.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--endocrinesystem-->
+		 <name>HyperThyroidism</name>
+		 <symptoms>
+			progressive functional decline, anorrexia, weight loss, fatigue, cardiac arrythymia, cardiac failure
+		 </symptoms>
+		 <diagnosis>
+			1.Thyroid scan.
+			2.Beta blockers to  minimize rapid heart rate and anxiety.
+			3.Antithyroid medications, In some cases antithyroid medications may cure hyperthyroidism.
+			4.Surgery to remove the overactive thyroid gland may be performed. This can cure the disorder.
+			5.Swallowing of radioactive iodine.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--urinarysystem-->
+		 <name>Urinary Tract Infection</name>
+		 <symptoms>
+			burning stinging pain,cloudy bloody urine, Frequent urge to urinate, leaking urine, pressure or pain in your pelvic area or lower belly
+		 </symptoms>
+		 <diagnosis>
+			1.Five to seven day course of therapy with amoxicillin, cotrimoxazole, norfloxacin or ciprofloxacin is effective.
+			2.In the presence of shock and septicaemia, parenteral antibiotic therapy with ciprofloxacin, cephalosporins or aminoglycosides and hospitalization are required.
+			3.Drink plenty of fluids.
+		</diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Benign Prostatic Hypertrophy</name>
+		 <symptoms>
+			hesitancy and straining starting a urine stream, weak flow of the urine stream, Dribbling after urination,
+			Feeling that the bladder is not completely empty, urge to urinate again soon after urinating,
+			Pain during urination (dysuria)
+		 </symptoms>
+		 <diagnosis>
+			1.Till recently surgery, initially abdominal and later transurethral, was the only mode of therapy
+			for prostatic hypertrophy.
+			2.In recent years medical management with specific long acting beta1- adrenergic antagonists
+			(such as terazosin 2.5-5 mg, dozaxosin 2-4 mg, tamsulosin 0.4mg) have been used with excellent results.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Malignancy Of Prostate</name>
+		 <symptoms>
+			In early stage-
+			hesitancy and straining starting a urine stream, weak flow of the urine stream, Dribbling after urination,
+			Feeling that the bladder is not completely empty, urge to urinate again soon after urinating,
+			Pain during urination (dysuria),
+			in last stage-skeletal metastatic disease is common
+		 </symptoms>
+		 <diagnosis>
+			1.Radical surgery in early stages.
+			2.Hormonal manipulation with anti-androgens, namely, non-steroidal flutamide and
+			steroidal diethylstilboesterol have been found to be effective when combined with bilateral orchidectomy.
+			3.Radiotherapy is another alternative in such patients.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Urinary Incontinence</name>
+		 <symptoms>
+			A sudden urgent need to urinate,
+			Sudden leakage of urine,
+			The need to urinate frequently,
+			A feeling of fullness in the bladder even after urination,
+			Leakage of urine while sleeping,
+			A urine stream that stops and restarts during urination,
+			Difficulty urinating even while feeling the urge to urinate
+		 </symptoms>
+		 <diagnosis>
+			1.Exercises to strengthen the pelvic floor muscles.
+			2.Avoid spicy foods, caffeine, and carbonated drinks.
+			3.Anticholinergics/antimuscarinics (Detrol, Ditropan XL, Enablex, Oxytrol, Urispas, and Vesicare) can prevent bladder spasms.
+			4.Oxytrol, Detrol, Ditropan XL, Myrbetriq, and Vesicare also are approved for women with overactive bladder (OAB).
+			5.If the above treatments don't provide enough relief, surgery may help. 
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--mental health system-->
+		 <name>Depression</name>
+		 <symptoms>
+			somatic complaints, sleep disturbance and agitation, anorexia, thoughts of death, 
+			impaired concentration and dysphoria, Cognitive impairment
+		 </symptoms>
+		 <diagnosis>
+			1.Antidepressants are effective in old age.
+			2.Therapeutic doses of tricyclic antidepressants and serotonin re-uptake inhibitors 
+			(fluoxetine 20-40 mg once daily, sertraline 25-50 mg once daily).
+			3.Lithium is also effective in old age despite an increased risk of nephrotoxicity.
+			4.Electroconvulsive therapy (ECTY) is safe in old age with more than 60% recovery rate.
+			5.Psychotherapy is useful in depression in old age.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--neurological system-->
+		 <name>Parkinson Disease</name>
+		 <symptoms>
+			Rhytmcim tremor, Fixed posture, Monotonous voice, Tendency to fall, Rigidity, Mask-like face, 
+			Difficulty in initiating movement, Freezing episodes, Festinating gait, Loss of arm swing, 
+			Sleep disturbances, Psychosis, Depression, Dementia in late stages
+		 </symptoms>
+		 <diagnosis>
+			1.Enhancement of dopaminergic transmission In the brain by oral drugs such as levodopa, bromocriptine and selegiline.
+			2.Use of anticholinergic drugs also improves symptoms and functionality.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Stroke</name>
+		 <symptoms>
+			Sudden weakness or numbness in the face, arm, or leg on one side of the body,
+			Abrupt loss of vision, strength, coordination, sensation, speech, or the ability to understand speech,
+			Sudden dimness of vision, especially in one eye,
+			Sudden loss of balance, possibly accompanied by vomiting, nausea, fever, hiccups, or trouble with swallowing,
+			Sudden and severe headache with no other cause followed rapidly by loss of consciousness -- indications of a stroke due to bleeding,
+			Brief loss of consciousness,
+			Unexplained dizziness or sudden falls
+		 </symptoms>
+		 <diagnosis>
+			1.Call for instant medical assistance.
+			2.Give a clot-dissolving medicine called tissue plasminogen activator (t-PA).
+			3.You may also receive aspirin or another antiplatelet medicine.
+			4.Control bleeding, reduce pressure in the brain, and stabilize vital signs, especially blood pressure.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--sensory system-->
+		 <name>Cataract</name>
+		 <symptoms>
+			Frequent changes in eyeglasses, Needing brighter light to read,
+			Poor night vision, Fading or yellowing of colours.
+		 </symptoms>
+		 <diagnosis>
+			1.Treatment of cataract is generally surgical which depends on the patient&apos;s visual needs. 
+			2.Prescription for glass has now been replaced by implantation of intraocular lens, which restores near normal focusing ability.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Glaucoma</name>
+		 <symptoms>
+			Abnormal pupil size, nonreactivity to light,Glare or halos around lights, 
+			Increased sensitivity to light, Poor night vision, Red eye, 
+			Seeing floating objects in your vision, Swelling of eyes
+		 </symptoms>
+		 <diagnosis>
+			1.Eye drops for glaucoma.
+			2.Laser surgery for glaucoma.
+			3.Microsurgery for glaucoma.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Skin Infection</name>
+		 <symptoms>
+			Red skin, Itchy skin, Rashes
+		 </symptoms>
+		 <diagnosis>
+			1.For better treatment consult immediately to a dermatologist.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--musculoskeletal system-->
+		 <name>Osteoarthritis</name>
+		 <symptoms>
+			pain, stiffness, bone sweeling, loss of movement, instability
+		 </symptoms>
+		 <diagnosis>
+			1.Acetaminophen (Tylenol) to relieve pain.
+			2.Cortisone injection to reduce inflammation.
+			3.Glucosamine and chondroitin to strengthen damaged joint cartilage.
+			4.Injection of a synovial fluid substitute to help lubricate joints and ease stiffness and movement.
+			5.Nonsteroidal anti-inflammatory drugs (NSAIDs), such as ibuprofen (Advil, Motrin) and aspirin to reduce inflammaion.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Rheumatoid Arthritis</name>
+		 <symptoms>
+			Stiffness, Redness, swelling, tenderness or pain, Limited motion, Loss of energy or fatigue, Low-grade fever,
+			Loss of appetite
+		 </symptoms>
+		 <diagnosis>
+			1.Nonsteroidal anti-inflammatory drugs (NSAIDs), such as ibuprofen, can be used to quickly ease swelling, stiffness and pain.
+			2.Corticosteroid drugs, such as prednisone, may also be used for quick relief. Corticosteroids may put you at greater risk for osteoporosis (bone weakness).
+			3.Methotrexate, chloroquine is used for long-term relief of RA. It is called a disease-modifying anti-rheumatic drug (DMARD).
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Osteoporosis</name>
+		 <symptoms>
+			Back pain due to spinal bone fractures, Bone pain or tenderness, Fracture that occurs with little or no trauma,
+			Loss of height, Neck pain due to spinal bone fractures, Stooped posture (spine curvature, kyphosis)
+		 </symptoms>
+		 <diagnosis>
+			1.Following a diet containing sufficient amounts of calcium and vitamin D.
+			2.Bisphosphonates, such as alendronate (Fosamax), and risedronate (Actonel), to decrease bone loss and to increase bone density.
+			3.Calcitonin, which can slow the rate of bone loss and help minimize pain.
+			4.Raloxifene (Evista), which is used to prevent and treat osteoporosis in postmenopausal women and
+			which can make bones stronger and reduce the risk of fractures.
+			5.Teriparatide (Forteo), which contains parathyroid hormone and encourages new bone tissue growth and reduces the risk of fractures.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--Brain Disease and cognitive impairment system-->
+		 <name>Dementia</name>
+		 <symptoms>
+			 Changes in mood, change in personality or behavior, Changes in sleep pattern, Confusion,Difficulty performing complex tasks 
+			 , Difficulty with memory thinking talking comprehension writing or reading, Impaired reasoning,
+			 Impaired spatial ability and orientation, Loss of judgment, Social withdrawal
+		 </symptoms>
+		 <diagnosis>
+			1.Cholinesterase inhibitors, such as donepezil (Aricept), galantamine (Razadyne), and rivastigmine (Exelon) to
+			increase the availability of a chemical that is required for nerve signaling in the brain.
+			2.NMDA receptor antagonists such as memantine (Namenda) to decrease the overexcitement of certain receptors
+			in the brain that may contribute to the degenerative process.
+			3.Antianxiety medications such as buspirone (Buspar)
+			4.Antidepressants, such as citalopram (Celexa), fluoxetine (Prozac), imipramine (Tofranil), and trazodone (Desyrel), to help stabilize moods.
+			5.Antipsychotics, such as haloperidol (Haldol), olanzapine (Zyprexa), and risperidone (Risperdal), for severe behavioral issues.
+			6.Stimulants such as methylphenidate (Methylin, Ritalin) to improve sleep disorders and flat moods.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Alzheimer</name>
+		 <symptoms>
+			Disorders of languages, Bedboundness and mutism, Increased forgetfullness,
+			Disorientation, Decreased problem solving, Anorexia
+		 </symptoms>
+		 <diagnosis>
+			1.Aricept is the only treatment for all stages of Alzheimer&apos;s disease: mild, moderate, and severe.
+			2.Razadyne (formerly called Reminyl) is also for mild to moderate Alzheimer&apos;s. 
+			3.Exelon is for people who have mild to moderate Alzheimer&apos;s. 
+			4.Memantine (Namenda)treats moderate-to-severe Alzheimer&apos;s disease.Namenda&apos;s side effects
+			  include tiredness, dizziness, confusion, constipation, and headache.
+			5.Namzaric This drug is a mix of Namenda and Aricept. It's best for people with moderate to severe Alzheimer&apos;s
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Vascular Dementia</name>
+		 <symptoms>
+			Vision loss, Disorientation, Loss of abilit to understand speech, Confusion
+		 </symptoms>
+		 <diagnosis>
+			1.Lifestyle changes like following a low-salt diet to manage high blood pressure,
+			losing weight if overweight,stopping smoking if you smoke, cutting down on alcohol 
+			reduce your risk of experiencing further damage to your brain.
+			2.ACE inhibitors and beta-blockers, to treat high blood pressure
+			3.Statins to treat high cholesterol
+			4.Antiplatelets, such as aspirin or clopidogrel, to reduce the risk of blood clots and further strokes
+			5.Anticoagulants, such as warfarin, which can also reduce your risk of blood clots and further strokes
+			6.Diabetes medication, such as metformin
+			7.Antidepressants to treat depression
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Confusion/Delirium</name>
+		 <symptoms>
+			Incontinence, Hallucination, Disorganised thinking, Memory loss, Confusion, Disorientation
+		 </symptoms>
+		 <diagnosis>
+			1.Treatment depends on the condition causing delirium. So, better to consult a doctor.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease><!--Gastrointestinal system-->
+		 <name>Hiatus Hernia &amp; Gastroesophageal Reflux</name>
+		 <symptoms>
+			heartburn, dysphagia, pain in lower sternum, belching, reflux of food, vomiting
+		 </symptoms>
+		 <diagnosis>
+			1.Weight loss if overweight.
+			2.Proper diet.
+			3.Avoid tea, coffee and colas.
+			4.Reduced use of saturated fat.
+			5.Take antacis/skimmed milk for heartburn.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>NSAID Gastropathy &amp; peptic ulcer</name>
+		 <symptoms>
+			Black colored stool, Anorexia, Weigth loss, Blood in vomit, Nausea, Abdominal pain
+		 </symptoms>
+		 <diagnosis>
+			1.Stop taking NSAIDs.
+			2.Proton pump inhibitors (PPIs) (such as Prilosec).
+			3.H2 blockers (such as Zantac).
+			4.Prostaglandin analogs (such as Cytotec).
+			5.Antacids (such as Tums).
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Non Ulcer Dyspepsia</name>
+		 <symptoms>
+			Abdominal pain, Bloating, Nausea, Indigestion
+		 </symptoms>
+		 <diagnosis>
+			1.If you are infected with H. pylori, the first treatment usually tried is to clear the H. pylori infection.
+			2.Acid-suppressing medicines like proton pump inhibitors (PPIs) and H2-receptor antagonists. 
+			3.PPIs include omeprazole, lansoprazole, pantoprazole, rabeprazole and esomeprazole.
+			4.H2-receptor antagonists include cimetidine, famotidine, nizatidine and ranitidine. 
+			5.Lifestyle changes includes eat regular meals. Lose weight, if you are obese.
+			If you are a smoker, consider giving up. Don't drink too much alcohol.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Cancer of GI tract</name>
+		 <symptoms>
+			New onset of constipation, Loss of appetite, Change in bowel habits, Dell pain radiationg to 
+			back, Weakness, Weight loss, Blood in stool
+		 </symptoms>
+		 <diagnosis>
+			Perform Imaging studies and tests to examine the blood and urine to detect
+			and diagnose gastrointestinal carcinoid tumors. Based on tumor give one of following treatment
+			1.Non-Small Cell Lung Cancer Treatment.
+			2.Pancreatic Neuroendocrine Tumors (Islet Cell Tumors) Treatment.
+			3.Rectal Cancer Treatment.
+			4.Small Intestine Cancer Treatment.
+			5.Unusual Cancers of Childhood Treatment
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Constipation</name>
+		 <symptoms>
+			Straining during bowel movement, Stomach ache, No bowel movement in 3 days,
+			Diarrhoea like stool, Hard compacted stool, Blood in stool
+		 </symptoms>
+		 <diagnosis>
+			1.Consume more fiber in your diet.
+			2.Take mild laxatives.
+			3.For stubborn constipation doctor may recommend a non-digestible sugar called lactulose. 
+			4.Lubiprostone (Amitiza) and linaclotide (Linzess) for long-term use in chronic constipation in adults and the elderly.
+		 </diagnosis>
+	 </disease>
+	 
+	 <disease>
+		 <name>Cancer</name>
+		 <symptoms>
+			Fatigue,
+			Lump or area of thickening under the skin,
+			Weight changes including unintended loss or gain,
+			Skin changes such as yellowing, darkening or redness of the skin, sores that won't heal, or changes to existing moles,
+			Changes in bowel or bladder habits,
+			Persistent cough or trouble breathing,
+			Difficulty swallowing,
+			Hoarseness,
+			Persistent indigestion or discomfort after eating,
+			Persistent, unexplained muscle or joint pain,
+			Persistent, unexplained fevers or night sweats,
+			Unexplained bleeding or bruising.
+		 </symptoms>
+		 <diagnosis>
+			1.In case of any mentioned symptoms immediateliiy consult the Doctors.
+			2.Various tests are there such as Physiacal tests, Laboratory tests, Imaging tests and Biopsy.
+			3.In case of Cancer, Together you and your doctor can weigh the benefits and risks of
+			each cancer treatment to determine which is best for you. Treatments are-
+			Surgery, Chemotherapy, Radiation therapy, Stem cell transplant, Immunotherapy, Hormone Therapy.
+		 </diagnosis>
+	 </disease>
+  
+	 
+	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</menu>

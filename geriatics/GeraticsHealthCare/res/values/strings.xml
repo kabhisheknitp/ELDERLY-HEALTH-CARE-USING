@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeraticsHealthCare</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">GeraticsHealthCare</string>
+
+    <string-array name="title">
+        <item>Home</item>
+        <item>Diagnosis</item>
+        <item>Diseases</item>
+        <item>Emergency Call</item>
+        <item>Expert Help</item>
+        <item>About Us</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/diagnosis</item>
+        <item>@drawable/diseases</item>
+        <item>@drawable/lecture</item>
+        <item>@drawable/help</item>
+        <item>@drawable/developer</item>
+    </array>
+
+    <string-array name="event">
+        <item>Cardiovascular System</item>
+        <item>Respiratory System</item>
+        <item>Gastrointestinal System</item>
+        <item>Endocrine System</item>
+        <item>Urinary System</item>
+        <item>Mental Health</item>
+        <item>Neurological Disorder</item>
+        <item>Sensory System</item>
+        <item>Musculoskeletal System</item>
+        <item>\t\t\tBrainageing/Cognitive Imapirment</item>
+        <item>Cancers</item>
+    </string-array>
+
+    <array name="eventicons">
+        <item>@drawable/cardio</item>
+        <item>@drawable/respiratory</item>
+        <item>@drawable/intestine</item>
+        <item>@drawable/endocrine</item>
+        <item>@drawable/urinary</item>
+        <item>@drawable/mental</item>
+        <item>@drawable/neuro</item>
+        <item>@drawable/sensory</item>
+        <item>@drawable/musculoskeletal</item>
+        <item>@drawable/brain</item>
+        <item>@drawable/cancer</item>
+    </array>
+
+    <string-array name="symptoms">
+        <item>No_Bowel_Movement_In_3_Days</item>
+        <item>Tingling_Sensations</item>
+        <item>Redeyes</item>
+        <item>Heartburn</item>
+        <item>Transient_Loss_Of_Consciousness</item>
+        <item>Heart_Palpitation</item>
+        <item>Bedboundness_And_Mutism</item>
+        <item>Severe_Thirst</item>
+        <item>Loss_Of_Judgement</item>
+        <item>Fast_Heart_Rate</item>
+        <item>Frequent_Fall</item>
+        <item>Abdominal_Pain</item>
+        <item>Intermittent_Cough</item>
+        <item>Disorders_Of_Language</item>
+        <item>Cardiac_Failure</item>
+        <item>Metastatic_Disease_Present</item>
+        <item>Thoughts_Of_Death</item>
+        <item>Psychosis</item>
+        <item>Disorganised_Thinking</item>
+        <item>Weight_Loss</item>
+        <item>Hypoxia</item>
+        <item>Night_Sweats</item>
+        <item>Chest_Pain</item>
+        <item>Pain_In_Lower_Sternum</item>
+        <item>Festinating_Gait</item>
+        <item>Fading_Of_Color</item>
+        <item>Sudden_Loss_Of_Balance_With_Vomiting_Nausea_Fever</item>
+        <item>Nonreactivity_To_Light</item>
+        <item>Anorexia</item>
+        <item>Delirium</item>
+        <item>Diarrhoea_Like_Stool</item>
+        <item>Memory_Loss</item>
+        <item>Immobility</item>
+        <item>Cognitive_Impairment</item>
+        <item>Red_Skin</item>
+        <item>Freezing_Episodes</item>
+        <item>Low_Grade_Fever</item>
+        <item>Belching</item>
+        <item>Lethargy</item>
+        <item>Course_Skin</item>
+        <item>Erectile_Disfunction</item>
+        <item>Heaviness_In_Chest</item>
+        <item>Chest_Tightness</item>
+        <item>Incontinence</item>
+        <item>Need_Brighter_Light_To_Read</item>
+        <item>Dizziness</item>
+        <item>Cyanosis</item>
+        <item>Low_Cardiac_Output_State</item>
+        <item>Neck_Pain_Due_To_Spinal_Bone_Fracture</item>
+        <item>Loss_Of_Height</item>
+        <item>Stomach_Ache</item>
+        <item>Seeing_Floating_Objects_In_Vision</item>
+        <item>Fruity_Smelling_Breath</item>
+        <item>Social_Withdrawl</item>
+        <item>Blood_Tinged_Phlegm</item>
+        <item>Straining_During_Bowel_Movement</item>
+        <item>Stooped_Posture</item>
+        <item>Pain_In_Pelvic_Area</item>
+        <item>Nosebleed</item>
+        <item>Increased_Forgetfulness</item>
+        <item>Irregular_Heart_Beat</item>
+        <item>Abnormal_Pupil_Size</item>
+        <item>Dysphasia</item>
+        <item>Black_Colored_Stool</item>
+        <item>Wheezing</item>
+        <item>Sweating</item>
+        <item>Abrupt_Loss_Of_Vision_Coordination_Speech</item>
+        <item>Pain_During_Urination</item>
+        <item>Loss_Of_Ability_To_Understand_Speech</item>
+        <item>Instabiity</item>
+        <item>Restlessness</item>
+        <item>Sleep_Disturbances</item>
+        <item>Progressive_Functional_Decline</item>
+        <item>Flu_Like_Symptom</item>
+        <item>Choking</item>
+        <item>Decreased_Problem_Solving</item>
+        <item>Swelling_In_Leg_Abdomen</item>
+        <item>Leaking_Urine_While_Sleeping</item>
+        <item>Raise_In_JVP</item>
+        <item>New_Onset_Of_Constipation</item>
+        <item>Rashes</item>
+        <item>Glare_Around_Lights</item>
+        <item>Weak_Flow_Of_Urine_Stream</item>
+        <item>Indigestion</item>
+        <item>Fainting</item>
+        <item>Dell_Pain_Radiating_To_Back</item>
+        <item>Vision_Loss</item>
+        <item>Sudden_Weakness_On_One_Side_Of_Body</item>
+        <item>Deafness</item>
+        <item>Burning_Stinging_Pain</item>
+        <item>Hallucination</item>
+        <item>Difficulty_Urinating_While_Having_Urge</item>
+        <item>Loss_Of_Appetite</item>
+        <item>Faintness_On_Standing</item>
+        <item>Blood_In_Stool</item>
+        <item>Itchy_Skin</item>
+        <item>Fixed_Posture</item>
+        <item>Nausea</item>
+        <item>Unexpected_Dizziness</item>
+        <item>Tendency_To_Fell</item>
+        <item>Redness</item>
+        <item>Brief_Loss_Of_Consciousness</item>
+        <item>Hard_Compacted_Stool</item>
+        <item>Hesitation_In_Starting_A_Urine_Stream</item>
+        <item>Oedema</item>
+        <item>Loss_Of_Arm_Swing</item>
+        <item>Back_Pain_Due_To_Spinal_Bone_Fracture</item>
+        <item>Obesity</item>
+        <item>Somatic_Complaints</item>
+        <item>Impaired_Concentration_And_Dysphoria</item>
+        <item>Malaise</item>
+        <item>Impaired_Reasoning_And_Special_Ability</item>
+        <item>Frequent_Infections</item>
+        <item>Anomia</item>
+        <item>Cloudy_Bloody_Urine</item>
+        <item>Fatigue</item>
+        <item>Change_In_Sleep_Patterns</item>
+        <item>Haemoptysis</item>
+        <item>Monotonous_Voice</item>
+        <item>Urine_Stream_Stopping_Restarting</item>
+        <item>Sudden_And_Severe_Headache</item>
+        <item>Slow_Heart_Rate</item>
+        <item>Bloating</item>
+        <item>Mask_Like_Face</item>
+        <item>Dry_Skin</item>
+        <item>Increased_Sensitivity_To_Light</item>
+        <item>Blood_In_Vomit</item>
+        <item>Shortness_Of_Breath</item>
+        <item>Swelling_Of_Eyes</item>
+        <item>Dementia_In_Late_Stage</item>
+        <item>Disorientation</item>
+        <item>Sudden_Dimness_Of_Vision_In_One_Eye</item>
+        <item>Sleep_Disturbance_And_Agitation</item>
+        <item>Fracture_With_Little_Or_No_Trauma</item>
+        <item>Weakness_In_Limbs</item>
+        <item>Frequent_Change_In_Eyeglasses</item>
+        <item>Change_In_Mood_And_Behaviour</item>
+        <item>Change_In_Bowel_Habits</item>
+        <item>Extreme_Fatigue</item>
+        <item>Hyperinflated_Chest</item>
+        <item>Rhythmic_Tremor</item>
+        <item>Cold_Intolerance</item>
+        <item>Rigidity</item>
+        <item>Reflux_Of_Food</item>
+        <item>Breathlessness</item>
+        <item>Labored_Breathing</item>
+        <item>Difficulty_In_Sleeping</item>
+        <item>Unresponsiveness</item>
+        <item>Neck_Pain</item>
+        <item>Vomiting</item>
+        <item>Anxiety</item>
+        <item>Cough</item>
+        <item>Weight_Gain</item>
+        <item>Leaking_Urine</item>
+        <item>Limited_Motion</item>
+        <item>Frequent_Urge_To_Urinate</item>
+        <item>Poor_Night_Vision</item>
+        <item>Congestion</item>
+        <item>Bladder_Not_Empty_After_Urinating</item>
+        <item>Stiffness</item>
+        <item>Pain</item>
+        <item>Bone_Swelling</item>
+        <item>Fever</item>
+        <item>Confusion</item>
+        <item>Head_Ache</item>
+    </string-array>
+    <string-array name="diseaseName">
+        <item>   Hypertension</item>
+        <item> Ischaemic Heart Disease</item>
+        <item> Acute Myocardial Infarction</item>
+        <item>Chronic Cardiac Failure"</item>
+        <item>Orthostatic Hypotension</item>
+        <item>Syncope</item>
+        <item>Pneumonia</item>
+        <item>Tuberculosis</item>
+        <item> Bronchial Asthma</item>
+        <item>Chronic Obstructive Pulmonary Disease</item>
+        <item>Lung cancer</item>
+        <item>Hiatus Hernia  Gastroesophageal Reflux</item>
+        <item>NASID Gastropathy  peptic ulcer</item>
+        <item>Non Ulcer Dyspepsia</item>
+        <item>Cancer of GI tract</item>
+        <item>Constipation</item>
+        <item>Diabetes Mellitus</item>
+        <item>HypoThyroidism</item>
+        <item> HyperThyroidism</item>
+        <item>Urinary Tract Infection</item>
+        <item>Benign Prostatic Hypertrophy</item>
+        <item>Malignancy Of Prostate</item>
+        <item>Urinary Incontinence</item>
+        <item>Dementia</item>
+        <item>Alzheimer</item>
+        <item>Vascular Dementia</item>
+        <item>Confusion/Delirium</item>
+        <item>Osteoarthritis</item>
+        <item> Rheumatoid Arthritis</item>
+        <item>Osteoporosis</item>
+        <item>Parkinson Disease</item>
+        <item>Stroke</item>
+        <item>Depression</item>
+        <item> Cataract</item>
+        <item>Glaucoma</item>
+        <item>Skin Infection</item>
+    </string-array>
+    <string-array name="contact">
+        <item>08252656408</item>
+        <item>07870530051</item>
+        <item>09122735258</item>
+        <item>08676995239</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="pic">
+        <item>@drawable/avad</item>
+        <item>@drawable/sunil</item>
+        <item>@drawable/vivek</item>
+        <item>@drawable/subh</item>
+    </array>
+    <array name="sitesicon">
+        <item>@drawable/wikipedia</item>
+        <item>@drawable/webmd</item>
+        <item>@drawable/mayo</item>
+        <item>@drawable/medlineplus</item>
+        <item>@drawable/google</item>
+        <item>@drawable/youtube</item>
+    </array>
+
+    <string-array name="sites">
+        <item> Wikipedia</item>
+        <item> WebMD</item>
+        <item> Mayo Clinic</item>
+        <item> Medilineplus</item>
+        <item> Google</item>
+        <item> Youtube</item>
+    </string-array>
+    <string-array name="bodypart">
+        <item>Select affected body part</item>
+        <item>eye</item>
+        <item>hand</item>
+        <item>leg</item>
+        <item>head</item>
+        <item>chest</item>
+        <item>abdomen</item>
+        <item>pelvis</item>
+        <item>knees</item>
+    </string-array>
+    <string-array name="forl">
+        <item>me</item>
+        <item>someone else</item>
+    </string-array>
+
+    <string name="title_activity_whatshot">Diagnosis Result</string>
+    <string name="choosebody">Choose body part</string>
+    <string name="contact">\n\nContacts</string>
+    <string name="mail">geriatrics_avi@gmail.com</string>
+    <string name="title_activity_workshop_container">Disease Details</string>
+    <string name="title_activity_enter_symptoms">EnterSymptoms</string>
+    <string name="appsummary">This app is dedicated towards the health problems of elderly people.
+        On the basis of symptoms one can diagnose himself and the app will predict the possible diseases that one can suffer.</string>
+    <string name="avadh">Avadhesh singh \nFinal Year B.tech Student\nDepartment of CSE \nNIT Patna \navadheshsingh151@gmail.com</string>
+    <string name="sunil">Sunil Gupta \nFinal Year B.tech Student\nDepartment of CSE \nNIT Patna \nsuneel.gupta0073@gmail.com</string>
+    <string name="vivek">Vivek Raj \nFinal Year B.tech Student\nDepartment of CSE \nNIT Patna \nvivek1206058@gmail.com</string>
+    <string name="shubh">Shubhnkar Upadhyaya \nFinal Year B.tech Student\nDepartment of CSE \nNIT Patna \nshubh800@gmail.com</string>
+    <string name="title_activity_diagnosis_result">DiagnosisResult</string>
+
+</resources>

@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Feb, 2016, 5:33:08 PM
+    Author     : SUNIL
+*/
+inputs:-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.inputs {
+    width: 270px;
+    padding: 10px 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9D9E9E;
+    text-shadow: 1px 1px 0 rgba(256, 256, 256, 1.0);
+    background: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+}
+
+.inputs:focus {
+    background: #DFE9EC;
+    color: #414848;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+    outline: 0;
+}
+
+.inputs:hover {
+    background: #DFE9EC;
+    color: #414848;
+}
+
+
+
+
+
+		img {border:0pt none;display:block}	
+                .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button4 {border-radius: 12px;}
+		/** custom widget settings */
+		.jowl_link {text-decoration:underline;color:blue;cursor:pointer;}
+		.jowl_tooltip {text-decoration:underline;color:steelblue;}
+		#thingtooltip {border:0px;}
+		.stats {text-align:right;font-size:smaller;}
+		.resourcebox {text-align:left}
